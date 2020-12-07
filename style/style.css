@@ -1,0 +1,69 @@
+body {
+  font-family: "Questrial", sans-serif;
+  background-image: url(../images/leon-wu-PccQlpZuIUo-unsplash.jpg);
+  /*  background-repeat: no-repeat; */
+  background-size: cover;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+#root {
+  /* all employee cards */
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: nowrap; */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  /* border: 2px solid black; */
+  margin: 0px auto;
+}
+
+.employee-card {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(109, 101, 101, 0.575);
+  /*  backdrop-filter: blur(5px); */
+  box-shadow: 0 0 55px black;
+  border-radius: 10px;
+}
+.employee-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(013, 130, 230, 0.5);
+  /* cursor: not-allowed; */
+}
+.remove-details {
+  display: none;
+}
+.employee-details {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.employee-card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.employee-image {
+  width: 100px;
+  height: 100px;
+}
+.employee-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(109, 101, 101, 0.575);
+}
